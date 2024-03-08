@@ -25,7 +25,7 @@ metadata:
   namespace: default
 spec:
   rules:
-  - host: go-web-app.192-168-31-13.sslip.io
+  - host: go-web-app.192-168-1-25.sslip.io
     http:
       paths:
       - pathType: Prefix

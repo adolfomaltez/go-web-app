@@ -6,7 +6,7 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello OneEuronet")
+	fmt.Fprintf(w, "Hello World")
 }
 
 func setupRoutes() {
