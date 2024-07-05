@@ -6,6 +6,7 @@ import (
 	"os"
 	"regexp"
 	"strings"
+
 	"./templates"
 )
 
@@ -63,5 +64,6 @@ func main() {
 
 	fmt.Println("Running http service at", webPort, "port")
 	http.HandleFunc("/", handler)
+	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir("./img/"))))
 	http.ListenAndServe(":"+webPort, nil)
 }
