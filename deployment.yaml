@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: go-web-app
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       name: go-web-app
@@ -18,4 +18,4 @@ spec:
         image: adolfomaltez/go-web-app
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 3000 
+          - containerPort: 3000
